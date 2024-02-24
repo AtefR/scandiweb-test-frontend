@@ -1,0 +1,101 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0 50px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+
+#error-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+
+.app {
+  min-height: 100vh;
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    align-items: center;  
+    border-bottom: solid;
+    margin-bottom: 50px;
+
+    .buttons {
+      margin-left: auto;
+      a, button {
+        margin-right: 15px;
+      }
+    }
+  }
+
+  .products {
+    display: -webkit-box;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    #delete_form {
+      display: -webkit-box;
+      
+      .product {
+        display: flex;
+        flex: 1 0 21%;
+        flex-direction: column;
+        width: 200px;
+        text-align: center;
+        border: solid 1px;
+        border-radius: 5px;
+        height: 150px;
+        padding: 10px;
+        flex-grow: 1;
+        margin: 10px;
+        line-height: 25px;
+  
+        input[type='checkbox'] {
+          float: left;
+        }
+      }
+    }
+  }
+
+  #product_form {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+
+    #DVD, #Furniture, #Book {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+.footer {
+  text-align: center;
+  font-size: 26px;
+  line-height: 50px;
+  border-top: solid;
+  margin-top: 50px;
+  padding: 30px;
+}
